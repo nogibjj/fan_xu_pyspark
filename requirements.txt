@@ -12,11 +12,5 @@ ruff==0.6.7
 fastapi == 0.85.0
 uvicorn == 0.18.3
 
-#math
-#unpinned due to package conflicts
-pandas
-matplotlib>=3.5, <3.10
-ydata-profiling
-
-#processing
-markdownify==0.13.1
+pyspark
+tabulate
