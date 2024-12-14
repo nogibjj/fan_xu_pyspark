@@ -28,24 +28,24 @@ Data loaded successfully.
 
 ## SQL Queries
 
-### Query 1: Top 10 High-Scoring Games
+### Top 10 Highest Scoring Players
 
-| Player                  | Team   | Pos   |
-|:------------------------|:-------|:------|
-| De'Aaron Fox            | SAC    | PG    |
-| Jayson Tatum            | BOS    | PF    |
-| Kevin Durant            | PHO    | PF    |
-| Devin Booker            | PHO    | PG    |
-| Jalen Brunson           | NYK    | PG    |
-| Shai Gilgeous-Alexander | OKC    | PG    |
-| Giannis Antetokounmpo   | MIL    | PF    |
-| Luka Dončić             | DAL    | PG    |
-| Ja Morant               | MEM    | PG    |
-| Kyrie Irving            | DAL    | SG    |
+| Player                  | Team   | Pos   |   PTS |
+|:------------------------|:-------|:------|------:|
+| Joel Embiid             | PHI    | C     |  34.7 |
+| Luka Dončić             | DAL    | PG    |  33.9 |
+| Giannis Antetokounmpo   | MIL    | PF    |  30.4 |
+| Shai Gilgeous-Alexander | OKC    | PG    |  30.1 |
+| Jalen Brunson           | NYK    | PG    |  28.7 |
+| Devin Booker            | PHO    | PG    |  27.1 |
+| Kevin Durant            | PHO    | PF    |  27.1 |
+| Jayson Tatum            | BOS    | PF    |  26.9 |
+| De'Aaron Fox            | SAC    | PG    |  26.6 |
+| Donovan Mitchell        | CLE    | SG    |  26.6 |
 
-## Data Transformation 1
+## Data Transformation
 
-### Creating a winner column for each game and calculate the point difference (1st 10 rows)
+### Creating a column to calculate Assist/Turnover Ratio (1st 10 rows)
 
 | Player                  | Team   | Pos   |   AST/TOV |
 |:------------------------|:-------|:------|----------:|

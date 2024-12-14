@@ -35,7 +35,7 @@ def test_explore_data(sample_data):
     output = explore_data(sample_data)
     assert "first_rows" in output
     assert "row_count" in output
-    assert output["row_count"] == 3  # Check sample data row count
+    assert output["row_count"] == 3
     assert "summary_stats" in output
 
 

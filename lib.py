@@ -5,8 +5,6 @@ from script import load_data, explore_data, process_data, transformation
 def save_to_markdown(filename, content):
     """
     Save the given content to a markdown file.
-    :param filename: Name of the markdown file.
-    :param content: Content to write into the file.
     """
     with open(filename, "w") as f:
         f.write(content)
@@ -39,14 +37,14 @@ def main():
     process_output = process_data(spark, df)
     markdown_content += "## SQL Queries\n\n"
     markdown_content += (
-        "### Query 1: Top 10 High-Scoring Games\n\n" + process_output["query"] + "\n\n"
+        "### Top 10 Highest Scoring Players\n\n" + process_output["query"] + "\n\n"
     )
 
     # Transformation 1
     winner_output = transformation(df)
-    markdown_content += "## Data Transformation 1\n\n"
+    markdown_content += "## Data Transformation\n\n"
     markdown_content += (
-        "### Creating a winner column for each game and calculate the point difference (1st 10 rows)\n\n"
+        "### Creating a column to calculate Assist/Turnover Ratio (1st 10 rows)\n\n"
         + winner_output
         + "\n\n"
     )
