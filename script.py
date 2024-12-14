@@ -1,8 +1,3 @@
-from pyspark.sql.functions import when, count, sum
-from pyspark.sql import SparkSession
-import re
-
-
 def load_data(spark, local_path="NBA_24_stats.csv"):
     """
     Load data from a local CSV file into a PySpark DataFrame, clean up column names, and remove duplicate columns.
